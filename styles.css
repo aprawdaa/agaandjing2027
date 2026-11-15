@@ -381,7 +381,7 @@ h3 { font-size: 1.45rem; }
 
 /* ---------- Tables ---------- */
 .table { width: 100%; border-collapse: collapse; background: var(--paper); border: 1px solid var(--line); }
-.table th, .table td { padding: 1rem 1.1rem; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+.table th, .table td { padding: 1rem 1.1rem; text-align: center; border-bottom: 1px solid var(--line); vertical-align: middle; }
 .table th { font-weight: 500; font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--ivory); background: var(--olive-deep); }
 .table tr:last-child td { border-bottom: 0; }
 .table td:first-child { font-family: var(--serif); font-size: 1.15rem; color: var(--burgundy); white-space: nowrap; }
@@ -505,7 +505,7 @@ h3 { font-size: 1.45rem; }
 }
 @media (max-width: 760px) {
   .wrap { padding: 3.5rem 1rem; }
-  .hero-photo { min-height: 74vh; background-position: 56% 42%; padding-bottom: 2.5rem; }
+  .hero-photo { min-height: 74vh; background-position: 46% 42%; padding-bottom: 2.5rem; }
   .hero-caption .eyebrow { letter-spacing: 0.2em; }
   .hero-caption h1 .and { font-size: 1.4rem; }
   .hero-below { padding: 2.2rem 1rem 3.2rem; }
