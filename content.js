@@ -78,8 +78,8 @@ const TEXT = {
         text: "Travel partners across twenty-four countries and counting, and partners in crime plotting to conquer the world, one startup at a time. Mostly, though, we just have the best fun together." },
       { year: "August 2025", title: "The proposal",
         text: "On our trip through Italy, surrounded by the colours of Cinque Terre, Jing asked the most important question of his life. Aga said yes." },
-      { year: "2027", title: "Forever",
-        text: "And now we are getting married. Nothing would make us happier than celebrating with you as we begin our life together. See you on June 5th, 2027." },
+      { year: "5th June 2027", title: "Forever",
+        text: "And now we are getting married. Nothing would make us happier than celebrating with you as we begin our life together." },
     ],
 
     "schedule.kicker": "The Day",
@@ -238,8 +238,8 @@ const TEXT = {
         text: "Towarzysze podróży przez 24 kraje (i liczymy dalej), a do tego wspólnicy w planach podboju świata, startup po startupie. A przede wszystkim po prostu świetnie się razem bawimy." },
       { year: "Sierpień 2025", title: "Zaręczyny",
         text: "Podczas naszej podróży po Włoszech, wśród kolorów Cinque Terre, Jing zadał najważniejsze pytanie swojego życia. Aga powiedziała „tak”." },
-      { year: "2027", title: "Na zawsze",
-        text: "A teraz bierzemy ślub. Nic nie ucieszy nas bardziej niż świętowanie tego dnia razem z Wami, na początku naszej wspólnej drogi. Do zobaczenia 5 czerwca 2027!" },
+      { year: "5 czerwca 2027", title: "Na zawsze",
+        text: "A teraz bierzemy ślub. Nic nie ucieszy nas bardziej niż świętowanie tego dnia razem z Wami, na początku naszej wspólnej drogi." },
     ],
 
     "schedule.kicker": "Plan dnia",
