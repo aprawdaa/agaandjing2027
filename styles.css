@@ -244,7 +244,6 @@ h3 { font-size: 1.45rem; }
 .panel { position: relative; }
 .bloom {
   position: absolute; z-index: 0; pointer-events: none; user-select: none;
-  opacity: 0.5; filter: saturate(0.85);
 }
 .bloom.left  { left: -3.5rem; }
 .bloom.right { right: -3.5rem; }
