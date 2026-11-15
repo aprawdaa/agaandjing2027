@@ -351,9 +351,9 @@ h3 { font-size: 1.45rem; }
 
 /* ---------- Story ---------- */
 .story-layout { display: grid; grid-template-columns: 1fr 1.15fr; gap: 3rem; align-items: center; }
-.story-photos { position: relative; padding: 0 0 34% 0; }
-.story-photos .s1 { width: 56%; transform: rotate(-6deg); position: relative; z-index: 2; }
-.story-photos .s2 { width: 56%; position: absolute; right: 0; bottom: 0; transform: rotate(5deg); }
+.story-photos { position: relative; padding: 0 0 30% 0; }
+.story-photos .s1 { width: 62%; transform: rotate(-6deg); position: relative; z-index: 2; }
+.story-photos .s2 { width: 62%; position: absolute; right: -5%; bottom: 0; transform: rotate(5deg); }
 .story { list-style: none; position: relative; padding-left: 2rem; }
 .story::before { content: ""; position: absolute; left: 6px; top: 0.5rem; bottom: 0.5rem; width: 1px; background: var(--sage); }
 .story li { position: relative; margin-bottom: 2rem; }
