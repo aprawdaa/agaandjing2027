@@ -211,7 +211,7 @@ h3 { font-size: 1.45rem; }
 /* names in the house burgundy, ampersand in the olive */
 .hero-caption h1 { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center; gap: 0 0.3em; line-height: 1.05; margin: 0 0 0.2rem; color: var(--burgundy); }
 .hero-caption h1 .script { font-size: clamp(2.5rem, 7vw, 5.2rem); line-height: 1.12; }
-.hero-caption h1 .and { font-family: var(--serif); font-style: italic; font-weight: 400; font-size: clamp(1.5rem, 3.4vw, 2.6rem); color: var(--olive-card); margin: 0; }
+.hero-caption h1 .and { font-family: var(--script); font-weight: 400; font-size: clamp(1.6rem, 3.6vw, 2.8rem); color: var(--olive-card); margin: 0; }
 .hero-caption .rule { justify-content: center; color: var(--olive-card); margin: 0.9rem 0 1.1rem; }
 .hero-caption .rule i { background: var(--olive-card); opacity: 0.5; width: 52px; }
 
@@ -339,14 +339,15 @@ h3 { font-size: 1.45rem; }
 
 /* ---------- Love block (愛 · miłość) ---------- */
 .love { margin-top: 6rem; }
-.love-grid { display: grid; grid-template-columns: 1fr auto 1fr; gap: 2rem; align-items: center; margin-top: 2.5rem; }
-.love-card { text-align: center; background: var(--paper); border: 1px solid var(--line); padding: 2.4rem 1.6rem; border-radius: 140px 140px 10px 10px; transition: transform var(--dur-2) var(--ease), box-shadow var(--dur-2) var(--ease); }
+/* stretch, so both cards match height whatever the text length or language */
+.love-grid { display: grid; grid-template-columns: 1fr auto 1fr; gap: 2rem; align-items: stretch; margin-top: 2.5rem; }
+.love-card { display: flex; flex-direction: column; justify-content: center; text-align: center; background: var(--paper); border: 1px solid var(--line); padding: 2.4rem 1.6rem; border-radius: 140px 140px 10px 10px; transition: transform var(--dur-2) var(--ease), box-shadow var(--dur-2) var(--ease); }
 .love-card:hover { transform: translateY(-4px); box-shadow: 0 30px 50px -36px rgba(106,33,49,0.5); }
 .love-word { font-size: 4.6rem; line-height: 1; color: var(--burgundy); }
 .love-word.cjk { font-size: 5rem; }
 .love-say { font-family: var(--serif); font-style: italic; color: var(--olive); font-size: 1.2rem; margin: 0.4rem 0 0.9rem; min-height: 1.2em; }
 .love-text { color: var(--muted); font-size: 0.93rem; }
-.love-divider { color: var(--sage); font-size: 1.4rem; }
+.love-divider { color: var(--sage); font-size: 1.4rem; align-self: center; }
 
 /* ---------- Story ---------- */
 .story-layout { display: grid; grid-template-columns: 1fr 1.15fr; gap: 3rem; align-items: center; }
