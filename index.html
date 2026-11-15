@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="view-transition" content="same-origin" />
+  <title>Agnieszka &amp; Jing · 05.06.2027</title>
+  <meta name="description" content="Agnieszka & Jing — 5 June 2027, Zamek Topacz, Wrocław" />
+  <meta property="og:image" content="assets/photos/hero-bridge.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500&family=Pinyon+Script&family=Noto+Serif+TC:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=22" />
+</head>
+<body>
+  <header class="site-header" id="header">
+    <a href="#welcome" class="monogram" aria-label="Home">A<span>&amp;</span>J</a>
+    <nav id="nav" class="nav" aria-label="Sections">
+      <a href="#welcome"  data-tab="welcome"  data-i18n="nav.welcome"></a>
+      <a href="#story"    data-tab="story"    data-i18n="nav.story"></a>
+      <a href="#travel"   data-tab="travel"   data-i18n="nav.travel"></a>
+      <a href="#stay"     data-tab="stay"     data-i18n="nav.stay"></a>
+      <a href="#nearby"   data-tab="nearby"   data-i18n="nav.nearby"></a>
+      <a href="#contact"  data-tab="contact"  data-i18n="nav.contact"></a>
+      <a href="#registry" data-tab="registry" data-i18n="nav.registry"></a>
+    </nav>
+    <div class="header-right">
+      <div class="lang" id="lang" role="group" aria-label="Language"></div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= WELCOME ================= -->
+    <section id="welcome" class="panel">
+      <div class="hero">
+        <div class="hero-photo" role="img" aria-label="Agnieszka &amp; Jing on Westminster Bridge, London">
+          <div class="hero-caption">
+            <h1 class="stagger" style="--i:0"><span class="script">Agnieszka</span><span class="and" data-i18n="hero.and"></span><span class="script">Jing</span></h1>
+            <div class="rule stagger" style="--i:1"><i></i><b>&#10086;</b><i></i></div>
+          </div>
+        </div>
+        <div class="hero-below">
+          <div class="countdown stagger" style="--i:2" id="countdown">
+            <div><b data-unit="days">0</b><small data-i18n="count.days"></small></div>
+            <div><b data-unit="hours">0</b><small data-i18n="count.hours"></small></div>
+            <div><b data-unit="minutes">0</b><small data-i18n="count.minutes"></small></div>
+            <div><b data-unit="seconds">0</b><small data-i18n="count.seconds"></small></div>
+          </div>
+          <p class="hero-date stagger" style="--i:3" data-i18n="hero.date"></p>
+          <p class="hero-place stagger" style="--i:3" data-i18n="hero.place"></p>
+        </div>
+      </div>
+
+      <div class="band">
+        <div class="wrap reveal">
+          <p class="kicker" data-i18n="welcome.kicker"></p>
+          <h2 data-i18n="welcome.title"></h2>
+          <p class="lead" data-i18n="hero.invitation"></p>
+          <p class="lead small" data-i18n="hero.location"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STORY ================= -->
+    <section id="story" class="panel">
+        <div class="bloom left" style="top: 4%; width: 185px;" aria-hidden="true"><img src="assets/flowers/amaranth-a-crop.png" alt="" loading="lazy" /></div>
+        <div class="bloom left" style="top: 58%; width: 190px;" aria-hidden="true"><img src="assets/flowers/amaranth-b.png" alt="" loading="lazy" /></div>
+      <div class="wrap">
+        <div class="reveal">
+          <p class="kicker" data-i18n="story.kicker"></p>
+          <h2 data-i18n="story.title"></h2>
+          <p class="sub" data-i18n="story.sub"></p>
+        </div>
+        <div class="story-layout">
+          <div class="story-photos reveal">
+            <figure class="polaroid s1"><img src="assets/photos/portrait.jpg" alt="Agnieszka & Jing" loading="lazy" /></figure>
+            <figure class="polaroid s2"><img src="assets/photos/holding-hands-bw.jpg" alt="" loading="lazy" /></figure>
+          </div>
+          <ol class="story reveal-group" id="story-list"></ol>
+        </div>
+      <div class="love">
+        <div class="reveal">
+          <p class="kicker" data-i18n="love.kicker"></p>
+          <h2 data-i18n="love.title"></h2>
+        </div>
+        <div class="love-grid reveal-group">
+          <article class="love-card reveal">
+            <p class="love-word cjk" data-i18n="love.ai.word"></p>
+            <p class="love-say" data-i18n="love.ai.say"></p>
+            <p class="love-text" data-i18n="love.ai.text"></p>
+          </article>
+          <div class="love-divider reveal" aria-hidden="true"><span>♥</span></div>
+          <article class="love-card reveal">
+            <p class="love-word script" data-i18n="love.milosc.word"></p>
+            <p class="love-say" data-i18n="love.milosc.say"></p>
+            <p class="love-text" data-i18n="love.milosc.text"></p>
+          </article>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- ================= TRAVEL ================= -->
+    <section id="travel" class="panel">
+      <div class="tab-hero" style="background-image:url('assets/photos/castle-aerial.jpg')">
+        <p class="kicker light stagger" style="--i:0" data-i18n="travel.kicker"></p>
+        <h2 class="stagger" style="--i:1" data-i18n="travel.title"></h2>
+        <p class="sub stagger" style="--i:2" id="venue-name"></p>
+      </div>
+      <div class="wrap">
+        <h3 class="group-title reveal" data-i18n="travel.venue.title"></h3>
+        <p class="venue-note reveal" data-i18n="travel.venue.note"></p>
+        <div class="venue reveal">
+          <figure class="venue-photo"><img src="assets/photos/castle-front.jpg" alt="Zamek Topacz" loading="lazy" /></figure>
+          <div class="venue-info">
+            <p class="venue-address" id="venue-address"></p>
+            <a class="btn btn-ivory" id="map-link" target="_blank" rel="noopener" data-i18n="travel.map.open"></a>
+          </div>
+        </div>
+        <h3 class="group-title reveal" data-i18n="travel.get.title"></h3>
+        <table class="table reveal" id="travel-table"></table>
+      </div>
+    </section>
+
+    <!-- ================= ACCOMMODATION ================= -->
+    <section id="stay" class="panel">
+        <div class="bloom right" style="top: 6%; width: 225px; transform: scaleX(-1);" aria-hidden="true"><img src="assets/flowers/orchid-wine.png" alt="" loading="lazy" /></div>
+      <div class="wrap">
+        <div class="reveal">
+          <p class="kicker" data-i18n="stay.kicker"></p>
+          <h2 data-i18n="stay.title"></h2>
+          <p class="sub" data-i18n="stay.sub"></p>
+        </div>
+        <div class="grid reveal-group" id="hotels"></div>
+      </div>
+    </section>
+
+    <!-- ================= WHILE YOU'RE HERE ================= -->
+    <section id="nearby" class="panel">
+      <div class="wrap wide">
+        <div class="reveal">
+          <p class="kicker" data-i18n="nearby.kicker"></p>
+          <h2 data-i18n="nearby.title"></h2>
+          <p class="sub" data-i18n="nearby.sub"></p>
+        </div>
+        <div id="nearby-groups"></div>
+      </div>
+    </section>
+
+    <!-- ================= QUESTIONS / CONTACT ================= -->
+    <section id="contact" class="panel">
+        <div class="bloom right" style="top: 8%; width: 195px;" aria-hidden="true"><img src="assets/flowers/anthurium-pink-crop.png" alt="" loading="lazy" /></div>
+      <div class="wrap">
+        <div class="reveal">
+          <p class="kicker" data-i18n="contact.kicker"></p>
+          <h2 data-i18n="contact.title"></h2>
+          <p class="sub" data-i18n="contact.sub"></p>
+        </div>
+        <div class="contacts reveal-group" id="contacts"></div>
+        <aside class="note reveal">
+          <h3 data-i18n="contact.diet.title"></h3>
+          <p data-i18n="contact.diet.text"></p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= REGISTRY ================= -->
+    <section id="registry" class="panel">
+        <div class="bloom left" style="bottom: 10%; width: 195px;" aria-hidden="true"><img src="assets/flowers/orchid-wine.png" alt="" loading="lazy" /></div>
+      <div class="wrap">
+        <div class="reveal">
+          <p class="kicker" data-i18n="registry.kicker"></p>
+          <h2 data-i18n="registry.title"></h2>
+          <p class="lead" data-i18n="registry.sub"></p>
+          <p class="registry-for" data-i18n="registry.for"></p>
+        </div>
+        <div class="registry-details reveal">
+          <p class="rd-title" data-i18n="registry.details.title"></p>
+          <div id="registry-rows"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="crest medium light" aria-hidden="true"></div>
+    <p data-i18n="footer"></p>
+    <p class="tiny">05 · 06 · 2027 · Zamek Topacz</p>
+  </footer>
+
+  <script src="content.js?v=22"></script>
+  <script src="crest.js?v=22"></script>
+  <script src="script.js?v=22"></script>
+</body>
+</html>
