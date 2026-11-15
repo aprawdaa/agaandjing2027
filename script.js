@@ -14,6 +14,9 @@ const ICONS = {
   dinner:  '<path d="M5 3v8a2 2 0 0 0 2 2v8M9 3v8a2 2 0 0 1-2 2M5 3v4M9 3v4M7 3v10"/><path d="M17 3c-2 2-2 6-2 8h2v10M17 3c1.5 2 2 5 2 8h-2"/>',
   dance:   '<path d="M9 3a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM15 3a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/><path d="M8 21l1-6 2-3V8l-3 2M16 21l-1-6-2-3V8l3 2M11 12h2"/>',
   sparkle: '<path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M6 18l2.5-2.5M15.5 8.5L18 6"/><circle cx="12" cy="12" r="2"/>',
+  plane:   '<path d="M11 4.5c0-1.2 2-1.2 2 0V10l8 4v2l-8-2v4l2 1.5V21l-3-1-3 1v-1.5L11 18v-4l-8 2v-2l8-4V4.5z"/>',
+  train:   '<rect x="6" y="3" width="12" height="14" rx="2.5"/><path d="M6 10h12M12 3v7"/><circle cx="9.5" cy="13.5" r="0.8"/><circle cx="14.5" cy="13.5" r="0.8"/><path d="M8.5 17L6 21M15.5 17L18 21M7.5 19.5h9"/>',
+  car:     '<path d="M3 16v-3l1.6-4.2A2 2 0 0 1 6.5 7.5h11a2 2 0 0 1 1.9 1.3L21 13v3a1 1 0 0 1-1 1h-1.5a1.5 1.5 0 0 1-3 0h-7a1.5 1.5 0 0 1-3 0H4a1 1 0 0 1-1-1z"/><path d="M4.5 12.5h15"/>',
 };
 const icon = (name) => `<svg viewBox="0 0 24 24" aria-hidden="true">${ICONS[name] || ICONS.sparkle}</svg>`;
 
@@ -45,10 +48,11 @@ function render() {
     .map((i) => `<li><span class="story-year">${esc(i.year)}</span><h3>${esc(i.title)}</h3><p>${esc(i.text)}</p></li>`)
     .join("");
 
-  const table = (cols, rows) =>
-    `<thead><tr>${cols.map((c) => `<th>${esc(c)}</th>`).join("")}</tr></thead>` +
-    `<tbody>${rows.map((r) => `<tr>${r.map((c) => `<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody>`;
-  $("#travel-table").innerHTML = table(t["travel.cols"], t["travel.items"]);
+  /* getting-there table: line icon + word in the first column, no emoji */
+  $("#travel-table").innerHTML =
+    `<thead><tr>${t["travel.cols"].map((c) => `<th>${esc(c)}</th>`).join("")}</tr></thead>` +
+    `<tbody>${t["travel.items"].map((r, i) => `<tr>${r.map((c, j) =>
+      `<td>${j === 0 ? icon(SITE.travelIcons[i]) : ""}${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody>`;
 
   $("#hotels").innerHTML = t["travel.hotels"]
     .map((h) => `<div class="card"><h3>${esc(h.name)}</h3><p class="meta">${esc(h.meta)}</p><p>${esc(h.text)}</p>

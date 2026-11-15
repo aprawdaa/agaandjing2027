@@ -28,6 +28,7 @@ const SITE = {
   languages: { en: "EN", pl: "PL" },
   attirePalette: ["#8a9a6b", "#e8c4c0", "#9a6b7a", "#5c1424"], // sage · blush · mauve · burgundy
   scheduleIcons: ["rings", "glass", "camera", "dinner", "dance", "sparkle"], // one per schedule row
+  travelIcons: ["plane", "train", "car"], // one per "getting there" row
   defaultLanguage: "en",
 };
 
@@ -50,7 +51,6 @@ const TEXT = {
     "hero.date": "Saturday, 5 June 2027",
     "hero.place": "Topacz Castle · Wrocław, Poland",
     "hero.invitation": "We're getting married, and we would be overjoyed to have you with us. Join us at Zamek Topacz for the ceremony, the dinner, and the dancing that follows.",
-    "hero.location": "A restored castle and park in Ślęza, just outside Wrocław, about 25 minutes from the Old Town.",
     "hero.cta": "See the day",
     "count.days": "days", "count.hours": "hours", "count.minutes": "minutes", "count.seconds": "seconds",
     "count.done": "Today is the day!",
@@ -107,17 +107,17 @@ const TEXT = {
     "travel.get.title": "Getting there",
     "travel.cols": ["How", "From", "Time to venue"],
     "travel.items": [
-      ["✈️ Plane", "Wrocław Airport (WRO)",                          "≈ 25 min by taxi"],
-      ["🚆 Train", "Wrocław Główny station",                         "≈ 25 min by taxi"],
-      ["🚗 Car",   "A4 / A8 motorways, exit Bielany Wrocławskie",    "Free parking at the castle"],
+      ["Plane", "Wrocław Airport (WRO)",                          "≈ 25 min by taxi"],
+      ["Train", "Wrocław Główny station",                         "≈ 25 min by taxi"],
+      ["Car",   "A4 / A8 motorways, exit Bielany Wrocławskie",    "Free parking at the castle"],
     ],
     "stay.kicker": "Accommodation",
     "stay.title": "Where to stay",
     "stay.sub": "From rooms at the castle itself to the heart of Wrocław, whatever suits your trip.",
     "travel.hotels": [
       { name: "Topacz Castle",           meta: "On site · walk to bed",  text: "Rooms at the venue itself. Mention our wedding when booking.", link: "https://www.zamektopacz.pl", cta: "Book" },
-      { name: "Hotel in Wrocław",        meta: "Old Town · ≈ 25 min",    text: "For guests who want to explore the city too.",               link: "#", cta: "Book" },
-      { name: "Hotel near the airport",  meta: "≈ 15 min",               text: "Handy for early flights home.",                               link: "#", cta: "Book" },
+      { name: "Hotel example 1",  meta: "Old Town · ≈ 25 min",    text: "For guests who want to explore the city too.",               link: "#", cta: "Book" },
+      { name: "Hotel example 2",  meta: "≈ 15 min",               text: "Handy for early flights home.",                               link: "#", cta: "Book" },
     ],
 
     "contact.kicker": "Questions",
@@ -184,12 +184,10 @@ const TEXT = {
     "registry.title": "Your presence is the greatest gift",
     "registry.sub": "Having you with us is truly all we wish for. However, if you would like to contribute to our future together, you can find the details below.",
     "registry.for": "We are saving for our honeymoon, and for turning the house we have just bought into our home.",
-    "registry.details.title": "Bank details",
     "registry.details": [
       ["Account name", "Agnieszka & Jing"],
       ["Sort code", "00-00-00"],
       ["Account number", "00000000"],
-      ["IBAN (international)", "GB00 XXXX 0000 0000 0000 00"],
     ],
 
     "footer": "With love, Agnieszka & Jing",
@@ -213,7 +211,6 @@ const TEXT = {
     "hero.date": "Sobota, 5 czerwca 2027",
     "hero.place": "Zamek Topacz · Ślęza k. Wrocławia",
     "hero.invitation": "Pobieramy się i będzie nam ogromnie miło, jeśli będziecie tego dnia z nami. Zapraszamy na Zamek Topacz: na ceremonię, kolację i zabawę do białego rana.",
-    "hero.location": "Odrestaurowany zamek z parkiem w Ślęzie pod Wrocławiem, około 25 minut od Rynku.",
     "hero.cta": "Zobacz plan dnia",
     "count.days": "dni", "count.hours": "godz.", "count.minutes": "min", "count.seconds": "sek.",
     "count.done": "To już dziś!",
@@ -270,17 +267,17 @@ const TEXT = {
     "travel.get.title": "Jak dojechać",
     "travel.cols": ["Czym", "Skąd", "Czas dojazdu"],
     "travel.items": [
-      ["✈️ Samolotem",  "Lotnisko Wrocław (WRO)",              "ok. 25 min taksówką"],
-      ["🚆 Pociągiem",  "Dworzec Wrocław Główny",              "ok. 25 min taksówką"],
-      ["🚗 Samochodem", "A4 / A8, zjazd Bielany Wrocławskie",  "Bezpłatny parking przy zamku"],
+      ["Samolotem",  "Lotnisko Wrocław (WRO)",              "ok. 25 min taksówką"],
+      ["Pociągiem",  "Dworzec Wrocław Główny",              "ok. 25 min taksówką"],
+      ["Samochodem", "A4 / A8, zjazd Bielany Wrocławskie",  "Bezpłatny parking przy zamku"],
     ],
     "stay.kicker": "Noclegi",
     "stay.title": "Gdzie się zatrzymać",
     "stay.sub": "Od pokoi w samym zamku po centrum Wrocławia. Wybierzcie to, co Wam najbardziej pasuje.",
     "travel.hotels": [
       { name: "Zamek Topacz",         meta: "Na miejscu · bez dojazdu",     text: "Pokoje w samym zamku. Przy rezerwacji powołajcie się na nasze wesele.", link: "https://www.zamektopacz.pl", cta: "Zarezerwuj" },
-      { name: "Hotel we Wrocławiu",   meta: "Stare Miasto · ok. 25 min",    text: "Dla tych, którzy chcą przy okazji zwiedzić miasto.",                   link: "#", cta: "Zarezerwuj" },
-      { name: "Hotel przy lotnisku",  meta: "ok. 15 min",                   text: "Wygodnie przed porannym lotem.",                                       link: "#", cta: "Zarezerwuj" },
+      { name: "Przykładowy hotel 1",  meta: "Stare Miasto · ok. 25 min",    text: "Dla tych, którzy chcą przy okazji zwiedzić miasto.",                   link: "#", cta: "Zarezerwuj" },
+      { name: "Przykładowy hotel 2",  meta: "ok. 15 min",                   text: "Wygodnie przed porannym lotem.",                                       link: "#", cta: "Zarezerwuj" },
     ],
 
     "contact.kicker": "Pytania",
@@ -345,13 +342,12 @@ const TEXT = {
 
     "registry.kicker": "Prezenty",
     "registry.title": "Najpiękniejszym prezentem będzie Wasza obecność",
-    "registry.sub": "To, że będziecie z nami, jest naprawdę wszystkim, czego sobie życzymy. Jeśli jednak chcielibyście nas czymś obdarować, zamiast kwiatów i upominków będziemy wdzięczni za wkład w naszą wspólną przyszłość. Potrzebne dane znajdziecie poniżej.",
-    "registry.for": "Zbieramy na naszą podróż poślubną oraz na urządzenie domu, który właśnie kupiliśmy.",
-    "registry.details.title": "Dane do przelewu",
+    "registry.sub": "To, że będziecie z nami, jest naprawdę wszystkim, czego sobie życzymy. Jeśli jednak chcielibyście nas czymś obdarować, zamiast kwiatów i upominków będziemy wdzięczni za wkład w naszą wspólną przyszłość.",
+    "registry.for": "Zbieramy na naszą wspólną podróż poślubną oraz na urządzenie domu, który właśnie kupiliśmy.",
     "registry.details": [
       ["Odbiorca", "Agnieszka & Jing"],
-      ["Numer konta (IBAN)", "GB00 XXXX 0000 0000 0000 00"],
-      ["SWIFT / BIC", "XXXXGB2L"],
+      ["Sort code", "00-00-00"],
+      ["Numer konta", "00000000"],
     ],
 
     "footer": "Z miłością, Agnieszka & Jing",
