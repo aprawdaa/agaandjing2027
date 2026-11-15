@@ -505,9 +505,12 @@ h3 { font-size: 1.45rem; }
 }
 @media (max-width: 760px) {
   .wrap { padding: 3.5rem 1rem; }
-  .hero-photo { min-height: 74vh; background-position: 46% 42%; padding-bottom: 2.5rem; }
+  .hero-photo { min-height: 74vh; background-position: 49% 42%; padding-bottom: 2.5rem; }
   .hero-caption .eyebrow { letter-spacing: 0.2em; }
-  .hero-caption h1 .and { font-size: 1.4rem; }
+  /* phones: names stacked, one under the other, with a larger ampersand */
+  .hero-caption h1 { flex-direction: column; gap: 0.05em; }
+  .hero-caption h1 .script { font-size: 2.7rem; line-height: 1.15; }
+  .hero-caption h1 .and { font-size: 2rem; }
   .hero-below { padding: 2.2rem 1rem 3.2rem; }
   .countdown { gap: 0; }
   .countdown div { padding: 0 0.45rem; }
